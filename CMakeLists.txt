@@ -27,6 +27,10 @@ endif()
 add_subdirectory(external)
 
 include_directories(include)
+add_library(Porter2 INTERFACE)
+target_include_directories(Porter2 INTERFACE
+    $<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/include>
+)
 
 enable_testing()
 add_subdirectory(test)
