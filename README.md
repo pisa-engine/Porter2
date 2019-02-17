@@ -1,7 +1,7 @@
 # Porter2
 Porter2 stemming library
 
-[![Build Status](https://travis-ci.org/amallia/Porter2.svg?branch=master)](https://travis-ci.org/amallia/Porter2)
+[![Build Status](https://travis-ci.org/pisa-engine/Porter2.svg?branch=master)](https://travis-ci.org/pisa-engine/Porter2)
 
 ## Usage
 
