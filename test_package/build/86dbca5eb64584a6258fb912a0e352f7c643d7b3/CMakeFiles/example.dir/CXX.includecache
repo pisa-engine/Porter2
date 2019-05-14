@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/elshize/.conan/data/Porter2/1.0/pisa-engine/testing/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include/Porter2.hpp
+cstdint
+-
+functional
+-
+memory
+-
+string
+-
+
+/home/elshize/dev/Porter2/test_package/example.cpp
+Porter2.hpp
+-
+iostream
+-
+

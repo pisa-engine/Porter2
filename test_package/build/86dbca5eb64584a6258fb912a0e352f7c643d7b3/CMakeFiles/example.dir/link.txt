@@ -1,0 +1,1 @@
+/usr/bin/c++  -O3 -DNDEBUG  -rdynamic CMakeFiles/example.dir/example.cpp.o  -o example /home/elshize/.conan/data/Porter2/1.0/pisa-engine/testing/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/lib/libPorter2.a 

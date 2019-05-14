@@ -1,14 +1,14 @@
 #include <gtest/gtest.h>
 #include <gmock/gmock.h>
 
-#include "Porter2/Porter2.hpp"
+#include "Porter2.hpp"
 
 using namespace ::testing;
-using namespace ::stem;
+using namespace ::porter2;
 
 TEST(Porter2Test, TestVerbInIng) {
-    Porter2 stemmer;
-    auto thestem = stemmer.stem("eating");
+    Stemmer stemmer;
+    auto thestem = stemmer("eating");
     ASSERT_EQ(thestem, "eat");
 }
 
