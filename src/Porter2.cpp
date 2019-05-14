@@ -8,8 +8,8 @@ namespace porter2 {
 
 void snowball_porter2_deleter(snowball::SN_env *env) { snowball::close_env(env); }
 
-Stemmer::Stemmer() : env_(snowball::create_env()) {}
-Stemmer::Stemmer(Stemmer const &) : env_(snowball::create_env()) {}
+Stemmer::Stemmer() : env_(snowball::create_env(), snowball_porter2_deleter) {}
+Stemmer::Stemmer(Stemmer const &) : env_(snowball::create_env(), snowball_porter2_deleter) {}
 Stemmer &Stemmer::operator=(Stemmer const &) { return *this; }
 
 std::string Stemmer::stem(std::string const &word) const
