@@ -3,4 +3,6 @@ EXECUTE_PROCESS(COMMAND git submodule update --init
                 OUTPUT_QUIET
         )
 
-add_subdirectory(googletest EXCLUDE_FROM_ALL)
+if (Porter2_ENABLE_TESTING AND BUILD_TESTING)
+    add_subdirectory(googletest EXCLUDE_FROM_ALL)
+endif()
