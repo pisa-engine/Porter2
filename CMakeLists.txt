@@ -28,6 +28,8 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
+include(CTest)
+
 #
 # OPTIONS
 #
@@ -48,7 +50,6 @@ target_include_directories(${Porter2_TARGET_NAME} PUBLIC
     $<INSTALL_INTERFACE:${Porter2_INCLUDE_INSTALL_DIR}>
 )
 
-include(CTest)
 if (Porter2_ENABLE_TESTING AND BUILD_TESTING)
     enable_testing()
     add_subdirectory(test)
