@@ -10,7 +10,7 @@ Porter2 stemming library
 #include "Porter2/Porter2.hpp"
 
 int main(int argc, char **argv) {
-    stem::Porter2 stemmer;
+    porter2::Stemmer stemmer;
     auto thestem = stemmer.stem("eating");
     std::cout << thestem << std::endl; // eat
     return 0;
